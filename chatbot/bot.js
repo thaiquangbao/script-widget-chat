@@ -132,19 +132,19 @@
         loadPreviousSession: false,
         allowFileUploads: false,
         allowedFilesMimeTypes: "*",
-        metadata: {
-          phoneNumbers: config.phoneNumbers, // users App
-          tokens: config.tokens, // users App
-          emailAdmin: config.emailAdmin, // admin Website
-          merchantId: config.merchantId, // admin Website
-          secretKey: config.secretKey, // admin Website
-          merchantKey: config.merchantKey, // users App
-          userId: config.userId,
-          platform: config.platform,
-        },
+        // metadata: {
+        //   phoneNumbers: config.phoneNumbers, // users App
+        //   tokens: config.tokens, // users App
+        //   emailAdmin: config.emailAdmin, // admin Website
+        //   merchantId: config.merchantId, // admin Website
+        //   secretKey: config.secretKey, // admin Website
+        //   merchantKey: config.merchantKey, // users App
+        //   userId: config.userId,
+        //   platform: config.platform,
+        // },
         i18n: {
           en: {
-            title: "MembeeBot",
+            title: config.title,
             subtitle: "",
             inputPlaceholder: "Nhập câu hỏi...",
           },
@@ -161,13 +161,6 @@
   webhookUrl: "",
   welcomeBot: "",
   messageBot: "",
-  phoneNumbers: "",
-  tokens: "",
-  emailAdmin: "",
-  merchantId: "",
-  secretKey: "",
-  merchantKey: "",
-  userId: "",
-  platform: "",
+ 
 });
 // "Bắt đầu trò chuyện cùng Membee. Chatbot hỗ trợ 24/7."
